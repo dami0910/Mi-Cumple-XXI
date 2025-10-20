@@ -1,0 +1,119 @@
+ body {
+      margin: 0;
+      height: 100vh; /* para ocupar toda la pantalla */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: url('img/fondo.png') center/cover no-repeat fixed;
+      background-color: #eabcea;
+      font-family: 'perfume';
+    }
+
+    @font-face {
+        font-family: 'perfume';
+        src: url('fonts/perfume.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'heart';
+        src: url('fonts/beautiful_heart.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    #contenedor {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #izquierdo {    
+      flex: 3; /* ocupa espacio */
+      display: flex;
+      flex-direction: column; /* apila en columna */
+      justify-content: space-between; /* separa arriba y abajo */
+      padding: 1px;
+    }
+
+
+    #izquierdo div {
+      flex: 1;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    #derecho {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* centra horizontal */
+      align-items: center;     /* centra vertical */
+      margin: 1px;
+      font-weight: 100;
+    }
+
+    .cajas{
+      font-family: 'heart';
+        width: fit-content;
+        margin: 10px;
+        background-color: #feebff;
+        color: #3b516c;
+        border: 2px dashed #BC81CB;
+        text-align: center;
+        width: 40px;
+        height: 150px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        position: relative;
+        box-shadow: 0 0 0 4px #feebff, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+        transition: .1s ease-in-out, .4s color;
+    }
+
+    .hadas{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 50px;
+      height: auto;
+    }
+    .cajas:hover {
+        background-color: #b1bbe2;
+        border: 2px solid #977ba4;
+    }
+
+    .text-link {
+        font-weight: normal;
+        text-decoration: none;
+        color: #3b516c;
+    }
+
+    button{
+      font-size: large;
+      font-family: 'heart';
+      outline: none;
+      color: #3b516c;
+      padding: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      border: 2px dashed #BC81CB;
+      border-radius: 15px;
+      background-color: #feebff;
+      box-shadow: 0 0 0 4px #feebff, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+      transition: .1s ease-in-out, .4s color;
+    }
+
+    #cabeza {
+      font-size: 40px;
+    }
+
+
+    
+    
